@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Co-operators Scrum Parser</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div id="ScrumUI" class="container">
+        <div class="row row-centered">
+            <h1>Excel Parser</h1>
+            <h2>by Josh Agda</h2>
+            <p>Copy and paste entire scrum Excel files into the correct places then submit. Afterwards, copy and paste the result into a new Excel file.</p>
+            <p><b>Note:</b> This website assumes the format of the excel files and that the people assigned to are in alphabetical order.</p>
+            <p>
+                <h3>Yesterday's Scrum:</h3>
+                <textarea rows="30" cols="160" id="yesterday" placeholder="Copy and paste Excel content"></textarea>
+            </p>
+            <p>
+                <h3>Today's Scrum:</h3>
+                <textarea rows="30" cols="160" id="today" placeholder="Copy and paste Excel content"></textarea>
+            </p>
+    
+            <div id="errorParagraph">
+                <br id="placeholderSpace" />
+            </div>
+            <button type="button" class="btn-default" id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <div id="result" class="container"></div>
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
